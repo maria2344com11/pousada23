@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: Arial, sans-serif;
+}
+
+
+
+header {
+    background-color: #354b87;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;   
+    top: 0;        
+    left: 0;       
+    z-index: 1000; 
+}
+
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 15px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+}
+
+
+.header {
+    background-color: #555ea3;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+}
+
+
+
+.section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.imagem img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;     /* centraliza vertical (se tiver altura) */
+    padding: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagem img:hover {
+    transform: scale(1.08); /* aumenta 8% */
+    box-shadow: 0 0 15px rgba(44, 60, 133, 0.4); /* sombra suave opcional */
+}
+
+
+.textosobre {
+    background: #555ea3;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.4;/*espaço entre linhas*/
+    text-align: center; 
+
+}
+
+.textosobre h3 {
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.vantagens {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.vantagensfoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+.vantagensfoto:hover {
+    transform: scale(1.08); 
+}
+
+
+.tamanho {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+   
+.suites{
+   background:#555ea3;
+   color:#fff;
+   padding:46px 6% 60px;
+   text-align:center;
+}
+ .suites h2{
+     font-size:28px;
+     margin-bottom:18px;
+     color:#fff;
+     font-weight:700;
+  }
+
+        
+.quartos{
+  max-width:1300px;
+  margin:0 auto;
+  display:flex;
+  gap:20px;
+  justify-content:center; 
+  align-items:flex-start;
+  margin-top:12px;
+}
+
+.camas{
+    color:#333;
+    border-radius:6px;
+    width:32%;  
+}
+
+.camas img{
+    width:100%;        
+    height:260px;       
+    object-fit: cover;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.camas img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(44, 60, 133, 0.4); 
+}
+        
+.camas .informações{
+    padding:12px 14px;
+    text-align:center;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+        
+.btn{
+    display:inline-block;
+    margin-top:8px;
+    text-decoration:none;
+   padding:8px 12px;
+   color:#fff;
+   font-size:14px;
+}
+
+
+
+.reserva {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.reserva h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #08245c;
+    margin-bottom: 40px;
+}
+
+
+.reserva-box {
+    border: 14px solid #08245c;
+    padding: 40px 20px;
+    border-radius: 40px;
+    max-width: 750px;
+    margin: auto;
+    background: white;
+}
+
+
+.reserva-linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+/* ÍCONES */
+.icone-whatsapp {
+    width: 38px;
+}
+
+.icone-local {
+    width: 42px;
+}
+
+/* TEXTOS */
+.telefone {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.endereco {
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 500px;
+}
+
+/* TEXTO FINAL */
+.texto-final {
+    margin-top: 25px;
+    color: #555;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+footer{
+    background:#2f4175;
+    color:#fff;
+    padding:18px 6%;
+    text-align:center;
+    font-size:14px;
+    margin-top:28px;
+}
+
+
+/*responsivo*/
+/* Celulares grandes (até 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .banner img {
+        height: 300px;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .textosobre {
+        padding: 25px;
+        font-size: 16px;
+    }
+
+    .vantagens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quartos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .camas {
+        max-width: 90%;
+    }
+
+    .reserva-box {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    .telefone {
+        font-size: 20px;
+    }
+
+    .endereco {
+        font-size: 16px;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .banner img {
+        height: 220px;
+    }
+
+    .textosobre {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .tamanho {
+        width: 55px;
+        height: 55px;
+    }
+
+    .reserva h2 {
+        font-size: 28px;
+    }
+
+    .icone-local,
+    .icone-whatsapp {
+        width: 30px;
+    }
+
+    .telefone {
+        font-size: 18px;
+    }
+
+    .endereco {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
